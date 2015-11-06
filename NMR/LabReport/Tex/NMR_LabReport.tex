@@ -50,7 +50,12 @@ Using a TeachSpin Pulsed NMR PS1-D device we determined the spin relaxation cons
 \end{enumerate}
 \section{Background and Theory}
 
-
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.4]{Sample_Env.png}
+      \caption{The permanent magnetic field is directed along the $+z$ direction while the sample coil (pickup coil) detects magnetization of the sample in along the transverse ($y$) axis. Not shown are the RF coils used to tip the spins from alignment with the permanent field. Figure taken from A Conceptual Tour of NMR Ref. \cite{Concept_Tour}}
+      \label{fig:Sample_Env}
+\end{figure}
 \subsection{T1}
 \label{sub:T1_Theory}
 The differential equation describing the Z axis magnetization under the influence of an external magnetic field applied along the axis is:
@@ -61,16 +66,16 @@ Solving for $M_Z(t)$ results in:
 
 \begin{equation}
 \label{eq:T1_Fit}
-	M_Z(t) = M_0-Ce^{\frac{-t}{T_1}}
+	M_Z(t) = M_0-Ce^{\frac{-t}{T_1}},
 \end{equation}
 In the two pulse technique the first pulse, a $\pi$ pulse, sets the initial conditions allowing us to solve for $C$
 \begin{align*}
-	M_z(t=0)=-M_0
+	M_z(t=0)=-M_0,
 \end{align*}
 
 \begin{equation}
 \label{eq:Mz}
-	M_Z(t) = M_0(1-2e^{\frac{-t}{T_1}})
+	M_Z(t) = M_0(1-2e^{\frac{-t}{T_1}}),
 \end{equation}
 A $\frac{\pi}{2}$ pulse at time $\tau$ after the $\pi$ pulse allows us the measure $|M_Z(t)|$ so by varying the delay time $\tau$ we can collect data to fit with Eq. \ref{eq:T1_Fit} in order to determine $T_1$. However $M_Z$ is not always positive so the value $|M_Z(t)|$ which is measured cannot be fit immediately. 
 
@@ -95,6 +100,13 @@ Resulting in:
 \end{equation}
 
 \section{Experimental Procedures}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.4]{NMR_Block_Diagram.png}
+      \caption{Block Diagram For the experiment. The TeachSpin device would provide RF pulses to flip the spins and output a clean signal to the oscilloscope from which measurement were made. For a diagram of the sample environment see Figure \ref{fig:Sample_Env}}
+      \label{fig:Block_Diagram}
+\end{figure}	
+
 A TeachSpin Pulsed NMR PS1-D device was used to produce magnetic pulse and amplify the output of the pickup coil. The outputs were monitored with a Tektronix 200 MHz digital storage oscilloscope connected to a computer via labview. 
 
 Prior to determination of the time constants $T_1$ and $T_2$ the frequency of the rf field was adjusted to the resonant frequency of the system. This was accomplished by minimizing the amplitude of the beat frequency signal of from the rf coil and the excitation applied.
@@ -143,7 +155,8 @@ Values the time constants were determined from these fits and are presented in T
 	\end{table}
 As expected $T_2^*$ is significantly smaller than $T_2$. Also note that $T_1$ is $\sim$3x more than $T_2$. This is sensible as $T_1$ is associated with the realignment of the spins anti-aligned to the external field while $T_2$ corresponds to the realignment of spins which are perpendicular to the field. So $T_1$ corresponds to a much more dramatic realignment and also involves transfer of energy to the lattice.
 
-While they are several standard deviations from each other our value for $T_1$ is in the same range as found by Bianchini and Coffey, however our $T_2$ values differ significantly. As our values are lower for both measured quantities it seems that there is systematic error which one of us or Bianchini et al are not accounting for. 
+Our values $T_1$ and $T_2$ are on the same order of magnitude as as those found by Bianchini and Coffey, that they are several standard deviations apart is not significant as Mineral Oil is not a standard substance. We note that our uncertainties are much larger than those found by Bianchini and Coffey
+
 \subsection{Uncertainty Budget}
 \begin{table}[!h]
 	\begin{center}
@@ -185,9 +198,10 @@ From the residuals of the fits we can see that our fits are not bad. However our
 
 \section{Conclusions}
 \section{Acknowledgements}
-Pete!
+Pete Sinn was invaluable as a Lab Partner when performing this experiment.
 
 \begin{thebibliography}{99}
+\bibitem{Concept_Tour} Barbara Wolff-Reichert, Conceptual Tour of PNMR, 2008 
 \bibitem{TeachspinManual} Teachspin Instructional Pulsed NMR Apparatus Manual, Department of Physics and Astronomy, Knoxville, TN
 \bibitem{TaylorError} J.R. Taylor, {\it Introduction to Error Analysis}, (University Science Books, Sausalito, 1997)
 \bibitem{Bianchini} L. Bianchini, L. Coffey, Physics Department, Brandeis University, NMR Techniques Applied to Mineral Oil, Water, and Ethanol (2010)
