@@ -1,0 +1,82 @@
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+%\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{hyperref}
+
+% These are user defined functions that make parentheses, brackets, etc. easier to type.
+
+\def\bra#1{{\left\langle#1\right\vert}}
+\def\prn#1{{\left(#1\right)}}
+\def\ket#1{{\left\vert#1\right\rangle}}
+\def\abs#1{{\left|#1\right|}}
+\def\brk#1{{\left[#1\right]}}
+
+\title{NMR}
+
+
+\author{Ian Hunt-Isaak\\ \begin{small}
+Partner: Pete Sinn
+\end{small}}
+
+\begin{document}
+
+
+\date{}
+\maketitle
+\section{}
+
+\section{}
+
+\section{}
+\begin{equation}
+\frac{dM_z}{dt}=\frac{M_0 - M_Z}{T_1}
+\end{equation}
+\begin{equation}
+M_Z = M_0-Ke^{\frac{-t}{T_1}}
+\end{equation}
+With initial conditions $t=0, M_z=-M_0$ this becomes:
+\begin{equation}
+M_Z = M_0(1-2e^{\frac{-t}{T_1}})
+\end{equation}
+
+\subsection{Uncertainty Budget}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|} \hline 
+Source & Quantity&  Error in Quantity  & Propagated Error  \\ \hline
+\hline Temperature Sensor & stuff & stuff & Negligible\\
+\hline Current Measurement & I & 2 ma & 35\%\\
+\hline \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\section{}
+\section{}
+
+\end{document}

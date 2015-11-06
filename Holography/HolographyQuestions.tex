@@ -1,0 +1,80 @@
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+%\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+%\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage[hidelinks]{hyperref}
+
+
+\title{Holography}
+
+
+\author{Ian Hunt-Isaak\\ \begin{small}
+Partner: Corina Miner
+\end{small}}
+\date{}
+
+\begin{document}
+\maketitle
+\section{} %1
+It is difficult to be quantitative regarding the magnitude of the disturbance given the materials of the lab so qualitative descriptions and examples will be used. Dropping light objects such as a pencil from a height of ~30 cm onto the optics table did not result in a visually noticeable disturbance in the interference pattern observed.
+
+Our estimate for the coherence length of the laser was 30 cm. This value was determined by estimating that our laser is a multimode laser with the modes having frequencies that are ~1 GHz apart. Thus we have $\frac{c}{1 \text{GHz}}=30\text{cm}$
+\section{} %2
+The steps we took to give a better chance of producing a hologram were mainly focused on preventing accidentle exposure of the film prior to development. This involved blocking light from under the door when the film was out, using green safelights and transporting the film to the darkroom inside several layers of light blocking bags. We also attempted to get an appropriate ratio of signal and reference beam intensity. Despite this we did not manage to produce a hologram. As the state of the hologram is not known until the very end of the process we cannot pinpoint our the source of our failure. Possibilities include bad film, accidental exposure, bad development, decoherence of the and a bad ratio of signal to reference beam. In particular during the development process the film was expected to turn dark after immersion in developer 1 however we did not observe this behavior. This points to either a mistake in the development process or bad film.
+
+The generally accepted best ratio of the object to reference beam intensity is 1:4. Based on the information contained in the 25 Holography Lessons, \cite{holography.ru}, we can see that this ratio of intensities results in the most linear response of for the exposure of the film. At ratios closer to 1:1 the image will be brighter however there will be more distortion in the image due to the equality of the magnitude of the beams. With ratios of 1:$>$4 image brightness will decrease however there won't be equivalent increases in image quality.
+
+\section{} %3
+We attempted exposure times of 80, 120, and 160 seconds. If you either under or overexpose your hologram then you will not see anything in the end. In both cases the contrast on the film is lost, either never developed or washed out, and so no hologram can be produced.
+
+The purpose of the development process was to remove the silver-halide that had been marked by the development thus affecting the refractive index of the film. The first developer causes any silver-halide grains that had been marked by development to be totally converted to pure silver. The bleaching process then removes the pure silver grains.
+\begin{enumerate}
+\item Developer - Convert Silver-Halide to pure silver - this is the step at which the film should darken.
+\item Bath - Stop the development process by neutralizing the developer.
+\item Water Bath - Remove chemicals from previous baths.
+\item Bleach - Remove pure silver - it is at this step that the film should clear up.
+\item Photoflo - protects the film from scratches and dust.
+\end{enumerate}
+
+
+
+
+\section{} %4
+\subsection{Amplitude vs Phase}
+When making an amplitude hologram the amplitude transmissivity is proportional the exposure while in a phase hologram the refractive index of the hologram is modulated by the exposure. We made a phase hologram. A film with a different chemical composition that would have its transmissivity regulated by exposure would be necessary to create a phase hologram.
+\subsection{Plane vs Volume}
+In a plane hologram a 2 dimensional surface is used as the recording medium. This results in a condition for interference of $d(sin(i)+sin(\delta))=\lambda$ where $\lambda$ is the wavelength of the light, d is the grating spacing $i$ the angle of incidence, and $\delta$ the angle of diffraction. In volume holograms the process is different, instead of a diffraction grating reflections off layers in the material are important. These reflections are dictated by Bragg's law. The result of these differences is that the angle of the reference beam on the film must the same during viewing and exposure for a volume hologram while it can differ for a plane hologram. We made a volume hologram and could have made a plane hologram if we had used different film.
+Furthermore the angles of the reference
+\subsection{Reflection vs Transmission}
+The difference between reflection and transmission holograms is captured in their different names. A transmission hologram is viewed by observing the reference beam transmitted through the film while a reflection hologram is viewed by reflecting a reference beam off the film. We made a transmission hologram however we could have made a reflection hologram by modifying the geometry of our setup.
+\section{} %5
+There has been interest in Holography for data storage applications as it would allow for data storage in three dimensions resulting in the ability to store a large amount of data. Furthermore because data would not have be read bit by bit but rather by a single pulse of light tremendous rates of data transfer could be accomplished. As discussed in Holographic data storage: Coming of age \cite{Data_Storage}, the technology to accomplish this has in the last several years been much improved. This article describes the development of robust hologram data storage technology. That is it deals primarily with issues of how to make the data storage resistant to environmental such as temperature induced anisotropy in the recording medium. Also discussed is the necessary improvements in the chemistry of generating a film. This paper uses holography directly as a method for data storage, unfortunately it does not do much to discuss limitation of holography for data storage. It seems that among these issues would be the fact that the films are not over-writable so that the recorded data is not mutable, this is a major downside. Beyond this 
+
+\begin{thebibliography}{99}
+\bibitem{holography.ru} http://www.holography.ru/les24eng.htm, accessed 10-3-15
+\bibitem{Data_Storage} Dhar Lisa, Curtis Kevin,  Fäcke Thomas, Holographic data storage: Coming of age, Nature Photonics Vol 2, Issue 7 pgs 403-405, 2008
+
+\end{thebibliography}
+\end{document}
