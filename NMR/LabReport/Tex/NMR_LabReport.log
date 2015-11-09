@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.22)  6 NOV 2015 02:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.22)  6 NOV 2015 02:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,7 +280,7 @@ nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on NMR_LabReport.pdf (6 pages, 597885 bytes).
+Output written on NMR_LabReport.pdf (6 pages, 597849 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
