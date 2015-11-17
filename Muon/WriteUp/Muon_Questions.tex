@@ -1,0 +1,115 @@
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+%\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+%\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage[hidelinks]{hyperref}
+
+
+\title{Muon Physics}
+
+
+\author{Ian Hunt-Isaak\\ \begin{small}
+Partner: Corina Miner
+\end{small}}
+
+\begin{document}
+
+
+\date{}
+\maketitle
+\section{} %1
+It is possible for the Muons to travel the distance from the upper atmosphere to our detector due to Relativistic time dilation. In the Muon rest frame the journey takes much less time than in the earth frame. 
+
+
+\section{} %2
+dfg
+\section{} %3
+From the TeachSpin manual we have that 
+\begin{equation}
+\label{eq:t_obs}
+    \tau_{obs} = \left(1+\frac{N^+}{N^-}\right)\frac{\tau^-\tau^+}{\tau^-+\tau^+}.
+\end{equation}
+Equating $\tau^+$ with the Muon free lifetime $\tau_{\mu}$ and solving for $\tau_{\mu}$ we find that:
+\begin{equation}
+ \tau^+=\tau_{\mu} = \frac{\rho\tau_{\mathit{obs}} \tau^-}{{\left(\rho + 1\right)} \tau^ - \tau_{\mathit{obs}}}
+\end{equation}
+As noted by the Laser Expert Jason Stalnaker at an energy of 4 GeV $\frac{N^+}{N^-}=1.3$, also from the TeachSpin Manual $\tau^-=2.043 \pm.003$ $\mu$s. Given this we solve for the lifetime of a free muon and find that $\tau_{\mu}= -\frac{26559 \, \tau_{\mathit{obs}}}{10 \, \tau_{\mathit{obs}} - 46989}$
+
+The error in $\tau^-$ is insignificant relative to the error in $\tau_{obs}$ and so was dropped in the calculation of the free lifetime. Data was recorded with two different threshold voltages, 208 and 400 mV, of the two discriminator voltages the former is less trustworthy as at that threshold voltage the discriminator be more likely to give a false positive. With a threshold voltage of 400 mV the discriminator was less able to detect rapid decays, this was dealt with by excluding the clearly anomalous first point in the histogram from the analysis.
+
+The Histogram binning was determined by choosing the binning which resulted in the most reasonable fit residuals and $\chi^2$ values.
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}\hline
+		Source & Observed Lifetime ($\mu$s)& $\tilde{\chi}^2$&Percent (\%)&Free Lifetime ($\mu$s)\\ \hline\hline
+		208 mV Threshold &$2.21\pm .08$ & .702 & 80 &$2.35 \pm .15$  \\ \hline
+		400 mV Threshold & $2.18\pm .29$& 1.2  & 28 &$2.3 \pm .6$ \\ \hline
+		Average          & -            &-     &-&$2.33 \pm .30$\\ \hline
+        Literature       & -            &-     &-&$2.196$  \\ \hline
+	\end{tabular}
+\end{center}
+Our best calculated value for the muon free life time is $2.3 \pm .6$ $\mu$s, this is the value obtained with the 400 mV threshold. This value was chosen as the best value over the average due to the distrust of the 208 mV data described previously. This work's calculated value for the muon free lifetime is within $1*\sigma$ of the literature value , and for the 208 mV voltage the literature value is within $1.02\sigma$. On the basis of this our results are in agreement with the literature value for the free muon lifetime.
+
+The $\tilde{\chi}^2$ value for the 208 mV discriminator threshold data seems to imply that our error was overestimated which is strange as the error is derived from the very well established Poisson counting statistics. While the presented $\tilde{\chi}^2$ for the 400 mV is $1.2$ dramatic changes in $\tilde{\chi}^2$, getting as small as .45, could be achieved by varying the binning of the histogram. A better justification for the binning of the histogram would be necessary for future analysis of the data
+
+While the random error was determined through use of Poisson statistics as the square root of the number of counts a possible systematic source of error in the data is fluctuations in detector efficiency. Preliminary analysis of data on the rate of muons passing through the detector suggests that the building temperature, known to experience swings, may be having an effect on detector efficiency.
+\section{} %4
+The mean lifetime $\tau^-$ of a $\mu^-$ is lower than $\tau^+$ the lifetime of a $\mu^+$ in the detector as the $\mu^-$ can interact with the carbon and hydrogen nuclei as an electron would, entering a bound state with a nucleus. Once in this bound state an interaction between the muon and proton which results in the decay of the muon becomes possible. Thus the $\mu^-$ has a decay process available that the $\mu^+$ does not and so should have have a shorter average lifetime in the detector. 
+
+The differing decay rates are not the end of the differences between the $\mu^+$ and $\mu^-$, for reasons that are not fully known there are slightly more $\mu^+$ particles produced in teh atmosphere than $\mu^-$ particles. We can quantify this starting from Eq. \ref{eq:t_obs} to arrive at:
+\begin{equation}
+\label{eq:ratio}
+    \frac{N^+}{N^-} = -\frac{\tau^+}{\tau^-}\frac{\tau^--\tau_{obs}}{\tau^+-\tau_{obs}}
+\end{equation}
+Entering the literature values for $\tau^-$ and $\tau^+$ we find the following.
+\begin{equation}
+\frac{N^+}{N^-} =-\frac{2196}{2043}\left(\frac{2043-\tau_{obs}}{2196-\tau_{obs}}\right)
+\end{equation}
+\begin{center}
+	\begin{tabular}{|c|c|}\hline
+		Source & Ratio \\ \hline\hline
+		208 mV Threshold &$-15 \pm 93$   \\ \hline
+		400 mV Threshold & $13 \pm 381$ \\ \hline
+        Literature & 1.3  \\ \hline
+	\end{tabular}
+\end{center}
+While the literature value is within 1 $\sigma$ of the calculated values our calculated values are insignificant given the size of their error bars.
+\section{}%5
+\subsection{400 mV Discriminator}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}\hline
+		Quantity & Calculated Value & Literature Value\\ \hline\hline
+		 $G_F\ (10^{-53})$& $8.7 \pm 1.1 $ & .879  \\ \hline
+		$\frac{G_F}{(\hbar c)^3}\ (10^{-5}) $ &$ 1.15 \pm .14 $ &$ 1.166 (\text{ GeV})^{-2}$\\ \hline
+	\end{tabular}
+\end{center}
+\subsection{208 mV Discriminator}
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}\hline
+		Quantity & Calculated Value & Literature Value\\ \hline\hline
+		 $G_F\ (10^{-53})$& $8.2 \pm .09 $ & .879  \\ \hline
+		$\frac{G_F}{(\hbar c)^3}\ (10^{-5}) $ &$ 1.14 \pm .14 $ &$ 1.166 (\text{ GeV})^{-2}$\\ \hline
+	\end{tabular}
+\end{center}
+\end{document}
