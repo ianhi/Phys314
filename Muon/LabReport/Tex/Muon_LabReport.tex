@@ -61,11 +61,29 @@ For muons in the energy range of our detector we find this ratio to be 1.3\cite{
 
 \section{Experimental Procedures}
 %================================================================================
-
+We turned on the Muon detector and waited for awhile.
+Varied the threshold voltages
 \section{Results}
-
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.7]{400mVDect.png}
+      \caption{}
+      \label{fig:400}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.7]{208mVDect.png}
+      \caption{}
+      \label{fig:208}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.7]{combinemVDect.png}
+      \caption{}
+      \label{fig:combine}
+\end{figure}
 \subsection{Uncertainty Budget}
-The uncertainties for this experiment are determined by Poisson counting statistics and so for a histogram bin with N counts we have $\sigma_{counts}=\sqrt{N}$. 
+The uncertainties for this experiment are determined by Poisson counting statistics and so for a histogram bin with N counts we have $\sigma_{counts}=\sqrt{N}$. As can be seen from \ref{fig:400} how the binning is chose introduces an error in the detector life time value. This may be in part due to the fact that with the 400 mV threshold and Nbins > 100 there were bins wiht 0 counts. In order to avoid division by zero in the least squares calculation (those points have zero error when calculating poisson statistics) those points were eliminated from the data used for the fit. This may in part account for the drop off of values with number of bins.
 \begin{table}[!h]
 	\begin{center} 
 		\begin{tabular}{|c|c|c|c|} \hline 
@@ -80,9 +98,19 @@ The uncertainties for this experiment are determined by Poisson counting statist
 \end{table}
 
 \subsection{$\chi^2$ analysis}
-\label{sec:ChiSq}
-The data was first fit with errors in the data of $\pm .05$V however this produced high $\tilde{\chi}^2$ indicating a lower than necessary estimate of errors. As the $\tilde{\chi}^2$ for $T_1$ was originally 12.17 the error for that was re-estimated as $\sigma=.05*\sqrt{12}$. This produced the $\chi^2$ analysis in Table \ref{table:ChiSq}.
-
+The $\tilde{\chi}^2$ for the fit associated with each binning can also be plotted to see how this responds to binning. 
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.7]{ChiSq_400.png}
+      \caption{}
+      \label{fig:400_Chi}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+      \includegraphics[scale=.7]{ChiSq_208.png}
+      \caption{}
+      \label{fig:208_Chi}
+\end{figure}
 \begin{table}[!h]
 
 	\begin{center}
@@ -97,6 +125,7 @@ The data was first fit with errors in the data of $\pm .05$V however this produc
 \end{table}
 
 \section{Conclusions}
+Muon Dector life time was determined to some level of accuracy. How you bin your histogram does actually matter. How to treat the data
 \section{Acknowledgements}
 Corina Miner was invaluable as a Lab Partner when performing this experiment.
 
