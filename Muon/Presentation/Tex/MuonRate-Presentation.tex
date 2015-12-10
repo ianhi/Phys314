@@ -38,17 +38,19 @@
   \usefonttheme{default}    % or try default, structurebold, ...
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{caption}[numbered]
-  \setbeamerfont{frametitle}{size=\small}
+  \setbeamerfont{frametitle}{size=\footnotesize}
   \setbeamertemplate{bibliography item}[text]
 } 
 
 \usepackage[english]{babel}
-%\usepackage[utf8x]{inputenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{multicol}
+\usepackage{caption}
 
 % Here's where the presentation starts, with the info for the title slide
-\title[Muon Rate - Phys 314]{Time Variation of Muon Rate}
-\author{Ian H-I}
-\institute{}
+\title[Muon Rate - Phys 314]{Temperature (Time?) Variation in Muon Detection Rate}
+\author[Ian Hunt-Isaak]{Ian Hunt-Isaak}
+\institute[Oberlin College]{Partner: Corina Miner}
 \date{December 10, 2015}
 
 \begin{document}
@@ -58,108 +60,124 @@
 \end{frame}
 
 % These three lines create an automatically generated table of contents.
-\begin{frame}{Outline}
-  \tableofcontents
-\end{frame}
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
 
 \section{Introduction}
-
-\begin{frame}{Introduction}
-
+\subsection{Theory}
+\begin{frame}{Muon Sources}
 \begin{itemize}
-\item MUONS N SHIT
+	\item Cosmic Rays $\to$ Muons
+	\item Sun Cosmic Rays $\to$ Day/Night rate variation?
 \end{itemize}
-
-
+\centering
+\includegraphics[scale=.4]{../Figures/crhitsearth.jpg}
+\hspace{20pt}
+\includegraphics[scale=.3]{../Figures/dayNight.jpg}
 \end{frame}
 
-\subsection{The Experiment}
 
-\begin{frame}{Block Diagram}
+\begin{frame}{Confounding Effects}
+\begin{itemize}
+	\item Temperature affecting Detector
+	\item Solar Activity
+	\item 
+\end{itemize}
+\centering
+\includegraphics[scale=.4]{../Figures/crhitsearth.jpg}
+\hspace{20pt}
+\includegraphics[scale=.3]{../Figures/dayNight.jpg}
+\end{frame}
 
+\subsection{Experimental Setup}
+
+\begin{frame}{Experimental SetupBlock Diagrams}
+\centering
+\includegraphics[scale=.25]{../Figures/MuonBlockDiagram.png}
+\includegraphics[scale=.5]{../Figures/temperatureBlockDiagram.png}\\
+\tiny{Left Diagram from \cite{muonPhysics}}
 \begin{block}{Sweet Boundaries}
 God this text has a beautiful boundary
 \end{block}
 
-
-\end{frame}
-\subsection{Theory}
-\begin{frame}{Cosmic Rays}
-sdfla
-\begin{block}{ERTH}
-It turns out the earth rotates
-\end{block}
-
-\end{frame}
-\begin{frame}{Electronics and Temp}
-sdfla
 \end{frame}
 
 
-\section{Using chemistry packages with \LaTeX{}}
+\section{Results - Analysis}
 
-\subsection{No one likes chemistry}
+\subsection{Temperature Variation}
 
-\begin{frame}[fragile]
-\frametitle{Chemical equations with \texttt{mhchem}}
+\begin{frame}{Results - Hourly Temperature Variation}
+\centering
+\includegraphics[scale=.25]{../Figures/tempVariation-Wide.png}
+\end{frame}
+
+
+\begin{frame}{Hourly Temperature Variation with Muon Rate}
+\centering
+\includegraphics[scale=.25]{../Figures/bothTempVariation-Wide.png}
+\end{frame}
+
+\begin{frame}{Temperature Rate Correlation}
+\centering
+
+\begin{figure}
+\begin{multicols}{2}
+\centering
+\includegraphics[scale=.23]{../Figures/lowCorrelation.png}\\
+$200$ mV Threshold
+\includegraphics[scale=.23]{../Figures/highCorrelation.png}\\
+$400$ mV Threshold
+\end{multicols}
+{\caption*{}}
+\end{figure}
+
+
+
+\end{frame}
+
+\begin{frame}{Temperature Rate Correlation}
+\begin{center}
+	\begin{tabular}{|c|c|c|}\hline
+		Data Set & Slope & $\tilde{\chi}^2$ \\ \hline\hline
+		Low Threshold& $-0.0114 \pm 0.0028 $ & 4.681  \\ \hline
+		High Threshold &$-0.0053 \pm 0.0017 $ & 1.099\\ \hline
+	\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Possible Explanations}
+	\begin{itemize}
+	\item Threshold voltage drift
+	\item Electronics Efficiency
+	\item Noise
+	\end{itemize}
+\end{frame}
+
+
+\section{Next Steps\dots{}}
+
+\begin{frame}{Next Steps\dots{}}
 
 \begin{itemize}
-\item The \texttt{mhchem} package lets you write chemical equations in \LaTeX{} with the minimum of effort. 
-\item The example below shows how the standard representation of a reaction (on the left) is created from the simple code on the right:
-\end{itemize}
-
-
-\begin{itemize}
-\item More complicated reactions are still easy to write:
-\end{itemize}
-
-\end{frame}
-
-\subsection{Getting started with some \texttt{chemfig} coffee}
-
-\begin{frame}[fragile]
-\frametitle{Getting started with some \texttt{chemfig} coffee}
-
-It's easy to use the \texttt{chemfig} package for drawing complex molecules:
-
-\vskip 0.5cm
-
-
-If that looks quite daunting, we can learn from simpler molecules\dots{}how about a single water molecule?
-
-\end{frame}
-
-\subsection{Experiments with water and rings}
-
-\begin{frame}[fragile]
-\frametitle{Experiments with water and rings}
-
-To see how the \texttt{chemfig} package creates the drawings from your code, let us look at the simple water molecule:
-
-
-The simple \LaTeX{} code on the right is automatically converted into the molecular formula for water on the left. 
-\vskip 0.3cm
-Rings are similarly easy to code - consider the examples below:
-
-\vskip 0.3cm
-
-\end{frame}
-
-\section{Where to go next\dots{}}
-
-\begin{frame}{Where to go next\dots{}}
-
-\begin{itemize}
-\item This short example was designed to introduce you to using Overleaf for scientific presentations.
-\item This is made possible by the many great packages that have been developed for \LaTeX{}, including the two we focused on here (plus the \texttt{Beamer} package used for the overall presentation style). 
-\item For more help on using \LaTeX{}, see the links on the Overleaf help page: 
+\item Fix Muon Rate Data collection
+\item Record Threshold voltage to try to detect drift
+\item Correct for temperature offset
+\item Better Data $\to$ More Complicated Temperature Dependence
 \end{itemize}
 
 
 \end{frame}
 \begin{frame}
 \begin{thebibliography}{9}
-
+\bibitem{muonPhysics}
+	T.E Coan, J. Ye,
+	\emph{Muon Physics},
+	Accessed from Blackboard site
+\bibitem{rotationPic}
+	Accessed from \url{http://i.cdn-surfline.com/forecasters/blog/2013/12_dec/121813_3.jpg}
 \bibitem{lamport94}
   Leslie Lamport,
   \emph{\LaTeX: a document preparation system},
