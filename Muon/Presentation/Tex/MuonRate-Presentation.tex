@@ -34,7 +34,7 @@
 \mode<presentation>
 {
   \usetheme{CambridgeUS}       % or try default, Darmstadt, Warsaw, ...
-  \usecolortheme{seahorse} % or try albatross, beaver, crane, ...
+  \usecolortheme{whale} % or try albatross, beaver, crane, ...
   \usefonttheme{default}    % or try default, structurebold, ...
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{caption}[numbered]
@@ -71,10 +71,11 @@
 	\item Cosmic Rays $\to$ Muons
 	\item Sun Cosmic Rays $\to$ Day/Night rate variation?
 \end{itemize}
-\centering
-\includegraphics[scale=.4]{../Figures/crhitsearth.jpg}
+\begin{center}
+\includegraphics[scale=.25]{../Figures/cosmic_ray.jpg}
 \hspace{20pt}
-\includegraphics[scale=.3]{../Figures/dayNight.jpg}
+\includegraphics[scale=.25]{../Figures/dayNight.jpg}
+\end{center}
 \end{frame}
 
 
@@ -82,24 +83,17 @@
 \begin{itemize}
 	\item Temperature affecting Detector
 	\item Solar Activity
-	\item 
 \end{itemize}
-\centering
-\includegraphics[scale=.4]{../Figures/crhitsearth.jpg}
-\hspace{20pt}
-\includegraphics[scale=.3]{../Figures/dayNight.jpg}
 \end{frame}
 
 \subsection{Experimental Setup}
 
-\begin{frame}{Experimental SetupBlock Diagrams}
+\begin{frame}{Experimental Setup}
 \centering
 \includegraphics[scale=.25]{../Figures/MuonBlockDiagram.png}
 \includegraphics[scale=.5]{../Figures/temperatureBlockDiagram.png}\\
 \tiny{Left Diagram from \cite{muonPhysics}}
-\begin{block}{Sweet Boundaries}
-God this text has a beautiful boundary
-\end{block}
+
 
 \end{frame}
 
@@ -109,35 +103,22 @@ God this text has a beautiful boundary
 \subsection{Temperature Variation}
 
 \begin{frame}{Results - Hourly Temperature Variation}
-\centering
+\begin{center}
 \includegraphics[scale=.25]{../Figures/tempVariation-Wide.png}
+\end{center}
 \end{frame}
 
 
 \begin{frame}{Hourly Temperature Variation with Muon Rate}
-\centering
-\includegraphics[scale=.25]{../Figures/bothTempVariation-Wide.png}
+\begin{center}
+\includegraphics[scale=.27]{../Figures/bothTempVariation-Wide.png}
+\end{center}
 \end{frame}
 
 \begin{frame}{Temperature Rate Correlation}
 \centering
 
-\begin{figure}
-\begin{multicols}{2}
-\centering
-\includegraphics[scale=.23]{../Figures/lowCorrelation.png}\\
-$200$ mV Threshold
-\includegraphics[scale=.23]{../Figures/highCorrelation.png}\\
-$400$ mV Threshold
-\end{multicols}
-{\caption*{}}
-\end{figure}
-
-
-
-\end{frame}
-
-\begin{frame}{Temperature Rate Correlation}
+\small{
 \begin{center}
 	\begin{tabular}{|c|c|c|}\hline
 		Data Set & Slope & $\tilde{\chi}^2$ \\ \hline\hline
@@ -145,14 +126,31 @@ $400$ mV Threshold
 		High Threshold &$-0.0053 \pm 0.0017 $ & 1.099\\ \hline
 	\end{tabular}
 \end{center}
+}
+
+\begin{figure}
+\begin{multicols}{2}
+\centering
+\includegraphics[scale=.22]{../Figures/lowCorrelation.png}\\
+$200$ mV Threshold
+\includegraphics[scale=.22]{../Figures/highCorrelation.png}\\
+$400$ mV Threshold
+\end{multicols}
+\vspace {0pt}
+%\setlength{\abovefigureskip}{-30pt}
+{\caption*{}}
+\end{figure}
+
 \end{frame}
 
 
 \begin{frame}{Possible Explanations}
 	\begin{itemize}
 	\item Threshold voltage drift
+	\item Photomultiplier Gain
 	\item Electronics Efficiency
 	\item Noise
+	\item Muons only come inside when its cold out
 	\end{itemize}
 \end{frame}
 
@@ -176,14 +174,15 @@ $400$ mV Threshold
 	T.E Coan, J. Ye,
 	\emph{Muon Physics},
 	Accessed from Blackboard site
+\bibitem{stalknaker}
+	J. Stalnaker, Personal Correspondence
+\bibitem{muonRate}
+	N. Ramesh, M. Hawron, C. Martin, A. Bachiri,
+	\emph{Flux Variation of Cosmic Muons}
+	arxiv.org/pdf/1203.0101.pdf
 \bibitem{rotationPic}
 	Accessed from \url{http://i.cdn-surfline.com/forecasters/blog/2013/12_dec/121813_3.jpg}
-\bibitem{lamport94}
-  Leslie Lamport,
-  \emph{\LaTeX: a document preparation system},
-  Addison Wesley, Massachusetts,
-  2nd edition,
-  1994.
+
 
 \end{thebibliography}
 \end{frame}
