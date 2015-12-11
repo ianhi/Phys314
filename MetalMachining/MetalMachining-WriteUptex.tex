@@ -40,13 +40,13 @@ Partner: Corina Miner
 \date{}
 \maketitle
 \section*{1}
-Corina turned in.
+Corina turned in our piece.
 \section*{2} %1
-Consider the equation for the velocity of a point on a rotating at radius
+Consider the equation for the velocity of a point on a rotating circle of diameter d:
 \begin{equation}
-velocity = v\ (ft/min) * RPM = \pi \frac{d\ (in)}{12}
+velocity = v\ (ft/min) * RPM = \pi \frac{d\ (in)}{12},
 \end{equation}
-where d is the diameter in inches and v is the tangent velocity.
+where d is in inches and v is the tangent velocity.
 Setting $v$ equal to the surface cutting speed, $d$ equal to tool diameter and using the approximation $\pi \approx \frac{2e}{\sqrt{3}} \approx 3$ we find
 \begin{equation}
 \label{eq:speed}
@@ -59,12 +59,13 @@ As the cutting speed will be determined by the hardness of the material and the 
 \end{equation}
 which tells us what our spindle speed should be. 
 
-The milling machine manual recommends a surface cutting speed of 60 (sfm) for stainless steel. Putting this into Eq. \ref{eq:RPM} we find that our RPM's should be set to $RPM = \frac{60 \times 4}{.5} = 480$ for milling stainless steel with 1/2" end mill.
+The milling machine manual recommends a surface cutting speed of 60 (sfm) for stainless steel. Putting this into Eq. \ref{eq:RPM} we find that our RPM's should be set to $RPM = \frac{60 \times 4}{.5} = 480$ for milling stainless steel with 1/2" end mill. This is much slower than the 1700 RPMs that we used to machine our Aluminum block. This is because aluminum is a much softer metal and so can be cut more rapidly. In general the first considerations for the type of material should be meeting the required hardness, durability and other properties for the desired final piece. After those considering both cost and those limitations on specs it would be best to choose the easiest to machine material so that production of the object will be easy. If something requires a very hard or brittle metal then it could be difficult to machine and so it 
 
 One could also use Eq. \ref{eq:speed} to calculate the max cutting speed to be used for a given RPM, though the cutting speed one should use would likely be lower once the properties of the material are taken into account. Doing that and setting our RPMs to the max on our machine of 1700 we find that $cuttingSpeed = \frac{1700 \times .5}{4} =212.5\ (sfm)$.
 \section*{3} %2
-My machining experience was overall a positive one. I entered with more trepidation for tools such as the lathe that I had never used before than was warranted. One of the learning experiences I had was gaining a greater understanding of what is an isn't safe to do with the large tools. The second major part of the experience was learning not to rush as much as I might otherwise. Working to be both within tolerance and to have a nice finish forced me to be more considerate of my actions before I took them than I normally would have been. On the lathing section we lost a large amount of time due to confusion about how we were supposed to orient the tool. In working faster to regain the lost time we made a rougher than desired surface to the lathed piece. However this was partially resolved with sandpaper. The other flaw in the quality of our pieces was the trench we milled, this was not done as smoothly as it could have been and there are clear markings on it, we should have made our cuts shallower. We were within tolerance for all things except the diameter of the post which was .03" under the acceptable range.
+My machining experience was overall a positive one. I began with more trepidation for use the tools such as the lathe than I left with. I gained a greater understanding of what is and isn't safe to do with the large tools. The second major part of the experience was learning not to rush as much as I might otherwise. Working to be both within tolerance and to have a nice finish forced me to be more considerate of my actions before I took them than I normally would have been. On the lathing section we lost a large amount of time due to confusion about how we were supposed to orient the tool. In working faster to regain the lost time we made a rougher than desired surface to the lathed piece. However this was partially resolved by applying sandpaper to the post. The other flaw in the quality of our pieces was the trench we milled, this was not done as smoothly as it could have been and there are clear markings on it, we should have made our cuts shallower. We were within tolerance for all things except the diameter of the post which was .03" under the acceptable range.
 \section*{4} %3
 The positioning of the tool relative to the piece is determined by whether the goal is to face or turn the piece. 
 \section*{5} %3
+\includegraphics[width=\textwidth]{techDrawing.png}
 \end{document}
