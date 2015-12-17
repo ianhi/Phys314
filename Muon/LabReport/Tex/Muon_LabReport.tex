@@ -83,19 +83,7 @@ Varied the threshold voltages
       \label{fig:combine}
 \end{figure}
 \subsection{Uncertainty Budget}
-The uncertainties for this experiment are determined by Poisson counting statistics and so for a histogram bin with N counts we have $\sigma_{counts}=\sqrt{N}$. As can be seen from \ref{fig:400} how the binning is chose introduces an error in the detector life time value. This may be in part due to the fact that with the 400 mV threshold and Nbins > 100 there were bins wiht 0 counts. In order to avoid division by zero in the least squares calculation (those points have zero error when calculating poisson statistics) those points were eliminated from the data used for the fit. This may in part account for the drop off of values with number of bins.
-\begin{table}[!h]
-	\begin{center} 
-		\begin{tabular}{|c|c|c|c|} \hline 
-			Source & Quantity&  Error in Quantity  & Propagated Error  \\ \hline \hline
-			Model Error/Fitting Error& $T_1$ &  & 1.2 (ms)\\ \hline
-			Model Error/Fitting Error& $T_2$ & & .55 (ms)\\ \hline
-			Pulse Width&  & 5\% & .05 \%\\
-			\hline
-		\end{tabular}
-        \caption{Uncertainty Budget for this work. The model for $T_1$ in particular may not be capable of fully describing the system. For more information see \ref{sec:ChiSq}.}
-	\end{center}
-\end{table}
+The uncertainties for this experiment are determined by Poisson counting statistics and so for a histogram bin with N counts we have $\sigma_{counts}=\sqrt{N}$. As can be seen from \ref{fig:400} how the binning is chose introduces an error in the detector life time value. This may be in part due to the fact that with the 400 mV threshold and Nbins > 100 there were bins wiht 0 counts. In order to avoid division by zero in the least squares calculation (those points have zero error when calculating Poisson statistics) those points were eliminated from the data used for the fit. This may in part account for the drop off of values with number of bins.
 
 \subsection{$\chi^2$ analysis}
 The $\tilde{\chi}^2$ for the fit associated with each binning can also be plotted to see how this responds to binning. 
@@ -111,18 +99,7 @@ The $\tilde{\chi}^2$ for the fit associated with each binning can also be plotte
       \caption{}
       \label{fig:208_Chi}
 \end{figure}
-\begin{table}[!h]
 
-	\begin{center}
-		\begin{tabular}{|c|c|c|c|c|} \hline
-			Quantity & $\chi^2$&Deg Freedom&$\tilde{\chi}^2$  &  Probability \\ \hline \hline
-			$T_1$ & 11.16 & 14 & .797 &  67 \%   \\ \hline
-			$T_2$ & 18.55 & 15 & 1.23 & 14 \%   \\ \hline
-		\end{tabular} \\
-		\caption{Probabilities were determined from Ref. \cite{TaylorError}}
-        \label{table:ChiSq}
-	\end{center}
-\end{table}
 
 \section{Conclusions}
 Muon Dector life time was determined to some level of accuracy. How you bin your histogram does actually matter. How to treat the data
@@ -131,7 +108,7 @@ Corina Miner was invaluable as a Lab Partner when performing this experiment.
 
 \begin{thebibliography}{99}
 \bibitem{PDG}  Particle Data GRoup!!
-\bibitem{ChargeRatio} Conversation with jason Stalnaker
+\bibitem{ChargeRatio} Personal Correspondence with Jason Stalnaker
 
 
 

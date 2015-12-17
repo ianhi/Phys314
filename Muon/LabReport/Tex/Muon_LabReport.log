@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.22)  3 DEC 2015 13:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.22)  17 DEC 2015 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -261,72 +261,51 @@ Package pdftex.def Info: combinemVDect.png used on input line 81.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `sec:ChiSq' on page 2 undefined on input line 96.
-
-
-LaTeX Warning: Reference `sec:ChiSq' on page 2 undefined on input line 96.
-
-[2 <./400mVDect.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<ChiSq_400.png, id=25, 613.29124pt x 615.29875pt>
+[2 <./400mVDect.png>] <ChiSq_400.png, id=25, 613.29124pt x 615.29875pt>
 File: ChiSq_400.png Graphic file (type png)
- <use ChiSq_400.png>
-Package pdftex.def Info: ChiSq_400.png used on input line 104.
-(pdftex.def)             Requested size: 429.30093pt x 430.70618pt.
 
-<ChiSq_208.png, id=26, 613.29124pt x 615.29875pt>
+<use ChiSq_400.png>
+Package pdftex.def Info: ChiSq_400.png used on input line 92.
+(pdftex.def)             Requested size: 429.30093pt x 430.70618pt.
+ <ChiSq_208.png, id=26, 613.29124pt x 615.29875pt>
 File: ChiSq_208.png Graphic file (type png)
- <use ChiSq_208.png>
-Package pdftex.def Info: ChiSq_208.png used on input line 110.
+
+<use ChiSq_208.png>
+Package pdftex.def Info: ChiSq_208.png used on input line 98.
 (pdftex.def)             Requested size: 429.30093pt x 430.70618pt.
-
-
-LaTeX Warning: Citation `TaylorError' on page 3 undefined on input line 122.
-
-[3 <./208mVDect.png>]
+ [3 <./208mVDect.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \vbox (18.14548pt too high) has occurred while \output is active []
-
-
-[4 <./combinemVDect.png>]
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./ChiSq_400.png>] [6 <./ChiSq_208.png>] [7] (./Muon_LabReport.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[4 <./combinemVDect.png>] [5 <./ChiSq_400.png>] [6 <./ChiSq_208.png>]
+(./Muon_LabReport.aux) ) 
 Here is how much of TeX's memory you used:
- 2514 strings out of 495028
- 32900 string characters out of 6181497
- 89247 words of memory out of 5000000
- 5685 multiletter control sequences out of 15000+600000
- 11766 words of font info for 45 fonts, out of 8000000 for 9000
+ 2509 strings out of 495028
+ 32839 string characters out of 6181497
+ 89239 words of memory out of 5000000
+ 5680 multiletter control sequences out of 15000+600000
+ 11458 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,11n,24p,692b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b>
-Output written on Muon_LabReport.pdf (7 pages, 203560 bytes).
+ 38i,7n,24p,692b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb>
+Output written on Muon_LabReport.pdf (6 pages, 200979 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
